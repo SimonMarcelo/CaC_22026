@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Clase 17</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <script>
+
+            funcion1();
+
+            function funcion1() {
+                alert("Hola Mundo....");
+            }
+
+            var dato1=81;
+            var dato2= 90;
+
+            funcion2(dato1,dato2);
+            
+            function function2(x,y){
+                let suma = x + y;
+                console.log("La suma es: " + suma);
+            }
+
+
+            var dato3 = 90;
+            var dato4 = 90;
+            var dato5 = 0;
+
+
+            dato5 = funcion3(dato3,dato4);
+
+            console.log ("El resultado d ela función 5 es: " + dato5);
+            
+            function funcion3(j,p){
+                return j+p;
+            }
+
+            /////////////////////////////////////////////////
+
+            var nombre = "Nicolás";
+
+            mensaje();
+
+            function mensaje(){
+                nombre = "Pedro";
+            }
+
+            console.log(nombre);
+
+            /////////////////////////////////////////////////
+
+            function mensajeL(){
+                let nombreL = "Nicolas"
+                console.log("Nombre dentro de la funcion : " + nombreL)
+            }
+
+            console.log (nombreL);
+
+            /////////////////////////////////////////////////
+            mensajeCompleto("Nicolas", "mensaje de prueba");
+
+            function mensajeCompleto(nombre,mensaje = "hola Mundo"){
+                console.log(nombre + "---" + mensaje);
+            }
+
+            /////////////////////////////////////////////////
+            let edad = prompt("Ingrese edad",18);
+
+            verificar (edad);
+
+            function verificar(edad){
+                if (edad < 18) {
+                    alert("Ingreso no permitido");
+                }
+                else {
+                    alert("Ingreso autorizado");
+                }
+            }
+
+            /////////////////////////////////////////////////
+
+            var nombre = "nicolas";
+            var nombre2 = "JULIETA";
+            
+            console.log(nombre.toUpperCase());
+            console.log(nombre2.toLowerCase());
+            console.log(nombre2.length);
+            console.log(nombre2.slice(0,4));
+            
+            var empresa = "Nombre: Arcor";
+            console.log(empresa.replace("Arcor","Terrabusi"));
+
+            /////////////////////////////////////////////////
+
+            
+
+
+
+
+
+        </script>
+    </body>
+</html>
